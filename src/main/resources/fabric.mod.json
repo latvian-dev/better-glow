@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "betterglow",
+	"version": "${version}",
+	"name": "Better Glow",
+	"description": "",
+	"authors": [],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/betterglow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.latvian.mods.betterglow.BetterGlowClient"
+		]
+	},
+	"mixins": [
+		"betterglow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.8",
+		"fabric": "*",
+		"minecraft": ">=1.20.1"
+	},
+	"accessWidener": "betterglow.accessWidener"
+}

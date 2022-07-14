@@ -1,0 +1,4 @@
+accessWidener	v1	named
+
+accessible field net/minecraft/client/render/WorldRenderer entityOutlinePostProcessor Lnet/minecraft/client/gl/PostEffectProcessor;
+accessible field net/minecraft/client/gl/PostEffectProcessor passes Ljava/util/List;

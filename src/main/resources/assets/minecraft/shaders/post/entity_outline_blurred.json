@@ -1,0 +1,34 @@
+{
+  "targets": [
+    "swap",
+    "blurred",
+    "final"
+  ],
+  "passes": [
+    {
+      "name": "entity_outline",
+      "intarget": "final",
+      "outtarget": "swap",
+      "auxtargets": [
+        {
+          "name": "DiffuseDepthSampler",
+          "id": "final:depth"
+        },
+        {
+          "name": "MCDepthSampler",
+          "id": "minecraft:main:depth"
+        }
+      ]
+    },
+    {
+      "name": "better_glow_blur",
+      "intarget": "swap",
+      "outtarget": "blurred"
+    },
+    {
+      "name": "blit",
+      "intarget": "blurred",
+      "outtarget": "final"
+    }
+  ]
+}
